@@ -7,6 +7,7 @@
 <!--
   Gridoo 개인정보처리방침. Google Play 등록정보의 "개인정보처리방침 URL" 로 쓰는 공개 페이지.
   앱이 하는 일을 바꾸면(서버 순위표, 분석 도구, 광고, 새 권한 등) 이 페이지도 함께 고치고 시행일을 바꾼다.
+  2026-11-20: 오늘의 퍼즐 온라인 순위표(Supabase, 서울 리전) 추가.
 -->
 <style>
   :root {
@@ -40,102 +41,154 @@
 
   <section id="ko">
     <h1>Gridoo 개인정보처리방침</h1>
-    <p class="meta">시행일: 2026년 11월 8일</p>
+    <p class="meta">시행일: 2026년 11월 20일 (이전 버전: 2026년 11월 8일)</p>
 
     <div class="summary">
       <strong>한눈에 보기</strong>
       <ul>
-        <li>Gridoo는 이름, 이메일, 전화번호, 위치 같은 개인정보를 <strong>수집하지 않습니다</strong>.</li>
-        <li>게임 진행과 설정은 <strong>내 기기 안에만</strong> 저장되고, 개발자에게 전송되지 않습니다.</li>
+        <li>Gridoo는 이름, 이메일, 전화번호, 위치 같은 개인정보를 <strong>받지 않습니다</strong>.</li>
+        <li>게임 진행과 설정은 <strong>내 기기 안에</strong> 저장됩니다.</li>
+        <li><strong>오늘의 퍼즐 순위표</strong>를 위해, 오늘의 퍼즐을 다 풀면 닉네임과 점수, 걸린 시간 등이 순위표 서버로 전송됩니다. 닉네임과 점수는 다른 사용자에게 보입니다.</li>
         <li>광고, 분석 도구, 추적 기능이 없습니다.</li>
         <li>앱 안 구매는 Google Play(또는 App Store)가 처리하며, 개발자는 결제 정보를 볼 수 없습니다.</li>
       </ul>
     </div>
 
-    <h2>1. 수집하는 정보</h2>
-    <p>Gridoo는 개인을 알아볼 수 있는 정보를 수집하거나 서버로 보내지 않습니다. 앱에는 인터넷으로 개발자에게 데이터를 보내는 기능이 없습니다.</p>
+    <h2>1. 처리하는 정보</h2>
+    <p>Gridoo는 개인을 직접 알아볼 수 있는 정보(이름, 이메일, 전화번호, 위치, 연락처, 사진 등)를 받지 않습니다. 회원가입이나 로그인 절차도 없습니다. 아래 2장(기기 안)과 3장(순위표 서버)의 정보만 다룹니다.</p>
 
     <h2>2. 기기에만 저장되는 정보</h2>
-    <p>게임을 이어 하기 위해 아래 정보가 <strong>사용자의 기기 안</strong>(앱 전용 저장 공간)에만 저장됩니다.</p>
+    <p>게임을 이어 하기 위해 아래 정보가 <strong>사용자의 기기 안</strong>(앱 전용 저장 공간)에 저장됩니다.</p>
     <div class="wrap">
     <table>
       <tr><th>항목</th><th>내용</th></tr>
-      <tr><td>게임 진행</td><td>스테이지 별 기록, 풀던 퍼즐, 본 가이드</td></tr>
-      <tr><td>기록</td><td>푼 횟수와 최고 기록</td></tr>
+      <tr><td>게임 진행</td><td>스테이지 별 기록, 풀던 퍼즐, 본 가이드, 오늘의 퍼즐 달력 기록</td></tr>
+      <tr><td>기록과 업적</td><td>푼 횟수, 최고 기록, 점수, 업적·도전 진행과 받은 보상</td></tr>
       <tr><td>닉네임과 무작위 ID</td><td>기록 화면에 보이는 닉네임(직접 정함)과, 기기에서 만든 무작위 식별값. 실명이나 기기 고유번호가 아닙니다.</td></tr>
       <tr><td>설정</td><td>소리, 진동, 고른 스킨과 효과, 가진 꾸미기 아이템과 힌트 수</td></tr>
     </table>
     </div>
     <p>이 정보는 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 함께 삭제됩니다.</p>
 
-    <h2>3. 앱 안 구매</h2>
+    <h2>3. 오늘의 퍼즐 순위표</h2>
+    <p>오늘의 퍼즐을 <strong>그날 다 풀면</strong> 순위를 보여 주기 위해 아래 정보가 순위표 서버로 전송됩니다. 자유 플레이와 스토리 스테이지, 지난 날짜를 다시 푼 기록은 전송하지 않습니다.</p>
+    <div class="wrap">
+    <table>
+      <tr><th>항목</th><th>내용</th></tr>
+      <tr><td>익명 계정 ID</td><td>앱이 처음 순위표에 연결할 때 만들어지는 무작위 값. 이름, 이메일, 기기 고유번호와 연결되지 않습니다.</td></tr>
+      <tr><td>닉네임</td><td>기록 화면에서 직접 정한 닉네임(2~12자). <strong>순위표에서 다른 사용자에게 보입니다.</strong> 실명이나 연락처를 닉네임으로 쓰지 마세요.</td></tr>
+      <tr><td>퍼즐 기록</td><td>게임 종류, 퍼즐 날짜, 점수, 걸린 시간, 사용한 힌트 수, 실수 수, 기록한 시각. 점수와 시간은 순위표에서 다른 사용자에게 보입니다.</td></tr>
+      <tr><td>접속 기록</td><td>서버에 연결할 때 서비스 제공자(Supabase)가 보안과 운영을 위해 IP 주소, 요청 시각 같은 접속 기록을 자동으로 남길 수 있습니다.</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><strong>목적</strong>: 오늘의 퍼즐 순위와 이번 주 순위 표시, 비정상적인 점수 걸러 내기.</li>
+      <li><strong>보관 곳</strong>: Supabase Inc.(미국 회사)가 운영하는 데이터베이스 서비스이며, 데이터는 <strong>대한민국 서울 리전</strong>에 저장됩니다. 개발자는 이 서비스에 순위표 데이터의 저장과 관리를 맡기고 있습니다(처리 위탁). Supabase의 정보 처리는 <a href="https://supabase.com/privacy">Supabase 개인정보처리방침</a>을 따릅니다.</li>
+      <li><strong>보관 기간</strong>: 순위표 서비스를 운영하는 동안 보관하며, 삭제를 요청하면 지체 없이 지웁니다. 순위표 서비스를 끝내면 모두 삭제합니다.</li>
+      <li><strong>전송 보호</strong>: 모든 통신은 HTTPS로 암호화됩니다. 앱은 정해진 서버 함수로만 기록을 올리고 순위를 읽으며, 다른 사람의 기록을 직접 읽거나 바꿀 수 없습니다.</li>
+      <li><strong>삭제 요청</strong>: 아래 문의 메일로 닉네임(과 기억나면 기록한 날짜)을 보내 주시면 그 계정의 닉네임과 모든 기록을 삭제합니다. 앱을 삭제하면 기기에 있던 익명 계정 연결이 사라져 그 계정은 다시 쓰이지 않습니다.</li>
+      <li>인터넷에 연결되어 있지 않으면 기록을 기기에 잠시 보관했다가 다음에 연결될 때 보냅니다.</li>
+    </ul>
+
+    <h2>4. 앱 안 구매</h2>
     <p>꾸미기 효과, 스킨, 힌트 같은 앱 안 구매는 Google Play 결제 시스템(iOS에서는 Apple App Store)을 통해 이루어집니다. 카드 번호 등 결제 정보는 Google 또는 Apple이 처리하며 개발자에게 전달되지 않습니다. 앱은 구매가 완료되었는지와 구매한 상품만 확인합니다. Google의 정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
 
-    <h2>4. 권한</h2>
-    <p>Android에서 <strong>진동</strong> 권한만 사용합니다(정답/오답 알림용, 설정에서 끌 수 있음). 결제 기능이 들어가면 Google Play 결제에 필요한 권한이 추가될 수 있습니다.</p>
+    <h2>5. 권한</h2>
+    <p>Android에서 아래 권한을 사용합니다.</p>
+    <ul>
+      <li><strong>인터넷</strong>: 오늘의 퍼즐 순위표 전송과 조회, 앱 안 구매 확인.</li>
+      <li><strong>진동</strong>: 정답/오답 알림(설정에서 끌 수 있음).</li>
+      <li>결제 기능이 들어간 버전에는 Google Play 결제에 필요한 권한이 추가됩니다.</li>
+    </ul>
 
-    <h2>5. 제3자 제공</h2>
-    <p>개인정보를 수집하지 않으므로 제3자에게 제공하거나 판매하는 정보가 없습니다.</p>
+    <h2>6. 제3자 제공</h2>
+    <p>개발자는 정보를 판매하거나 광고·마케팅 목적으로 제3자에게 제공하지 않습니다. 순위표 데이터의 저장을 맡은 Supabase(3장)와 결제를 처리하는 Google·Apple(4장) 외에 정보를 받는 곳은 없습니다. 법령에 따라 요구되는 경우는 예외입니다.</p>
 
-    <h2>6. 아동</h2>
-    <p>Gridoo는 누구나 즐길 수 있는 퍼즐 게임이며, 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
+    <h2>7. 아동</h2>
+    <p>Gridoo는 누구나 즐길 수 있는 퍼즐 게임입니다. 순위표에는 닉네임이 공개되므로, 어린이는 실명이나 학교 이름 같은 정보를 닉네임으로 쓰지 않도록 보호자가 도와주세요. 그런 닉네임이 보이면 문의 메일로 알려 주시면 지웁니다.</p>
 
-    <h2>7. 방침의 변경</h2>
-    <p>나중에 온라인 순위표 같은 기능이 추가되어 처리하는 정보가 바뀌면, 이 페이지를 먼저 고치고 시행일을 새로 적습니다.</p>
+    <h2>8. 방침의 변경</h2>
+    <p>처리하는 정보가 바뀌면 이 페이지를 먼저 고치고 시행일을 새로 적습니다.</p>
 
-    <h2>8. 문의</h2>
-    <p>개인정보에 관한 문의: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
+    <h2>9. 문의</h2>
+    <p>개인정보에 관한 문의와 삭제 요청: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
   </section>
 
   <hr>
 
   <section id="en" lang="en">
     <h1>Gridoo Privacy Policy</h1>
-    <p class="meta">Effective date: November 8, 2026</p>
+    <p class="meta">Effective date: November 20, 2026 (previous version: November 8, 2026)</p>
 
     <div class="summary">
       <strong>At a glance</strong>
       <ul>
-        <li>Gridoo does <strong>not collect</strong> personal information such as your name, email, phone number or location.</li>
-        <li>Your progress and settings are stored <strong>only on your device</strong> and are never sent to the developer.</li>
+        <li>Gridoo does <strong>not ask for</strong> personal information such as your name, email, phone number or location.</li>
+        <li>Your progress and settings are stored <strong>on your device</strong>.</li>
+        <li>For the <strong>Daily Puzzle leaderboard</strong>, when you finish a daily puzzle your nickname, score, time and a few related values are sent to the leaderboard server. Your nickname and score are visible to other players.</li>
         <li>There are no ads, no analytics and no tracking.</li>
         <li>In-app purchases are processed by Google Play (or the App Store); the developer never sees your payment details.</li>
       </ul>
     </div>
 
-    <h2>1. Information we collect</h2>
-    <p>Gridoo does not collect or transmit any personally identifiable information. The app has no feature that sends data to the developer over the internet.</p>
+    <h2>1. Information we handle</h2>
+    <p>Gridoo does not ask for information that directly identifies you (name, email, phone number, location, contacts, photos, etc.). There is no sign-up or login. Only the information described in Section 2 (on your device) and Section 3 (leaderboard server) is handled.</p>
 
     <h2>2. Information stored on your device</h2>
-    <p>To let you continue playing, the following is stored <strong>only on your device</strong>, in the app's private storage:</p>
+    <p>To let you continue playing, the following is stored <strong>on your device</strong>, in the app's private storage:</p>
     <div class="wrap">
     <table>
       <tr><th>Item</th><th>Details</th></tr>
-      <tr><td>Game progress</td><td>Stage stars, the puzzle in progress, guides already seen</td></tr>
-      <tr><td>Records</td><td>Number of puzzles solved and best times</td></tr>
+      <tr><td>Game progress</td><td>Stage stars, the puzzle in progress, guides already seen, daily puzzle calendar</td></tr>
+      <tr><td>Records and achievements</td><td>Puzzles solved, best times, scores, achievement and challenge progress, rewards claimed</td></tr>
       <tr><td>Nickname and random ID</td><td>A nickname you choose for the records screen, and a random identifier generated on the device. It is not your real name or a hardware identifier.</td></tr>
       <tr><td>Settings</td><td>Sound, vibration, chosen skin and effect, owned cosmetic items and hint count</td></tr>
     </table>
     </div>
     <p>This data is deleted when you uninstall the app or clear its data in your device settings.</p>
 
-    <h2>3. In-app purchases</h2>
+    <h2>3. Daily Puzzle leaderboard</h2>
+    <p>When you <strong>finish a daily puzzle on its day</strong>, the following is sent to the leaderboard server so rankings can be shown. Free play, story stages and replays of past dates are not sent.</p>
+    <div class="wrap">
+    <table>
+      <tr><th>Item</th><th>Details</th></tr>
+      <tr><td>Anonymous account ID</td><td>A random value created the first time the app connects to the leaderboard. It is not linked to your name, email or a hardware identifier.</td></tr>
+      <tr><td>Nickname</td><td>The nickname you set on the records screen (2–12 characters). <strong>It is shown to other players on the leaderboard.</strong> Please do not use your real name or contact details.</td></tr>
+      <tr><td>Puzzle result</td><td>Game, puzzle date, score, time taken, hints used, mistakes, and time of submission. Score and time are shown to other players.</td></tr>
+      <tr><td>Connection logs</td><td>When the app connects, the service provider (Supabase) may automatically keep connection logs such as IP address and request time for security and operations.</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><strong>Purpose</strong>: showing daily and weekly rankings and filtering out impossible scores.</li>
+      <li><strong>Where it is stored</strong>: a database service operated by Supabase Inc. (a US company); the data is stored in the <strong>Seoul, South Korea</strong> region. The developer has entrusted storage and management of leaderboard data to this service. Supabase's handling of information is governed by the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
+      <li><strong>Retention</strong>: kept while the leaderboard is operated, and deleted without delay on request. All of it is deleted if the leaderboard is shut down.</li>
+      <li><strong>Protection in transit</strong>: all communication is encrypted with HTTPS. The app can only submit results and read rankings through fixed server functions; it cannot read or change other players' records directly.</li>
+      <li><strong>Deletion requests</strong>: email your nickname (and, if you remember, the dates you played) to the address below and we will delete that account's nickname and all its records. Uninstalling the app removes the link to the anonymous account on your device, and that account is not used again.</li>
+      <li>If you are offline, the result is kept on your device and sent the next time you connect.</li>
+    </ul>
+
+    <h2>4. In-app purchases</h2>
     <p>In-app purchases (cosmetic effects, skins, hints) are made through Google Play Billing (Apple App Store on iOS). Payment details such as card numbers are handled by Google or Apple and are not shared with the developer. The app only checks whether a purchase was completed and which item was bought. Google's handling of your information is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-    <h2>4. Permissions</h2>
-    <p>On Android the app only uses the <strong>vibration</strong> permission (for right/wrong feedback, can be turned off in settings). When purchases are enabled, permissions required by Google Play Billing may be added.</p>
+    <h2>5. Permissions</h2>
+    <p>On Android the app uses the following permissions:</p>
+    <ul>
+      <li><strong>Internet</strong>: sending and viewing the Daily Puzzle leaderboard, and confirming in-app purchases.</li>
+      <li><strong>Vibration</strong>: right/wrong feedback (can be turned off in settings).</li>
+      <li>Versions with purchases enabled also include the permission required by Google Play Billing.</li>
+    </ul>
 
-    <h2>5. Sharing with third parties</h2>
-    <p>Because no personal information is collected, none is shared with or sold to third parties.</p>
+    <h2>6. Sharing with third parties</h2>
+    <p>The developer does not sell information or share it with third parties for advertising or marketing. Apart from Supabase, which stores leaderboard data (Section 3), and Google/Apple, which process payments (Section 4), no one receives your information, except where required by law.</p>
 
-    <h2>6. Children</h2>
-    <p>Gridoo is a puzzle game for everyone and does not collect personal information from any user, including children.</p>
+    <h2>7. Children</h2>
+    <p>Gridoo is a puzzle game for everyone. Because nicknames are public on the leaderboard, parents should help children avoid using their real name, school name or similar details as a nickname. If you see such a nickname, let us know by email and we will remove it.</p>
 
-    <h2>7. Changes to this policy</h2>
-    <p>If features such as online leaderboards are added and the information handled changes, this page will be updated first with a new effective date.</p>
+    <h2>8. Changes to this policy</h2>
+    <p>If the information handled changes, this page will be updated first with a new effective date.</p>
 
-    <h2>8. Contact</h2>
-    <p>Privacy questions: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
+    <h2>9. Contact</h2>
+    <p>Privacy questions and deletion requests: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
   </section>
 </main>
 </body>
