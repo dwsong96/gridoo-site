@@ -48,7 +48,7 @@
       <ul>
         <li>Gridoo는 이름, 이메일, 전화번호, 위치 같은 개인정보를 <strong>받지 않습니다</strong>.</li>
         <li>게임 진행과 설정은 <strong>내 기기 안에</strong> 저장됩니다.</li>
-        <li><strong>오늘의 퍼즐 순위표</strong>를 위해, 오늘의 퍼즐을 다 풀면 닉네임과 점수, 걸린 시간 등이 순위표 서버로 전송됩니다. 닉네임과 점수는 다른 사용자에게 보입니다.</li>
+        <li><strong>순위표</strong>를 위해, 오늘의 퍼즐이나 스토리 스테이지를 다 풀면 닉네임과 점수, 걸린 시간 등이 순위표 서버로 전송됩니다. 닉네임과 점수는 다른 사용자에게 보입니다.</li>
         <li>광고, 분석 도구, 추적 기능이 없습니다.</li>
         <li>앱 안 구매는 Google Play(또는 App Store)가 처리하며, 개발자는 결제 정보를 볼 수 없습니다.</li>
       </ul>
@@ -70,19 +70,19 @@
     </div>
     <p>이 정보는 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 함께 삭제됩니다.</p>
 
-    <h2>3. 오늘의 퍼즐 순위표</h2>
-    <p>오늘의 퍼즐을 <strong>그날 다 풀면</strong> 순위를 보여 주기 위해 아래 정보가 순위표 서버로 전송됩니다. 자유 플레이와 스토리 스테이지, 지난 날짜를 다시 푼 기록은 전송하지 않습니다.</p>
+    <h2>3. 순위표</h2>
+    <p>오늘의 퍼즐을 <strong>그날 다 풀거나</strong>, 스토리 지도의 <strong>스테이지를 깨면</strong> 순위를 보여 주기 위해 아래 정보가 순위표 서버로 전송됩니다. 자유 플레이와 지난 날짜의 오늘의 퍼즐을 다시 푼 기록은 전송하지 않습니다.</p>
     <div class="wrap">
     <table>
       <tr><th>항목</th><th>내용</th></tr>
       <tr><td>익명 계정 ID</td><td>앱이 처음 순위표에 연결할 때 만들어지는 무작위 값. 이름, 이메일, 기기 고유번호와 연결되지 않습니다.</td></tr>
       <tr><td>닉네임</td><td>기록 화면에서 직접 정한 닉네임(2~12자). <strong>순위표에서 다른 사용자에게 보입니다.</strong> 실명이나 연락처를 닉네임으로 쓰지 마세요.</td></tr>
-      <tr><td>퍼즐 기록</td><td>게임 종류, 퍼즐 날짜, 점수, 걸린 시간, 사용한 힌트 수, 실수 수, 기록한 시각. 점수와 시간은 순위표에서 다른 사용자에게 보입니다.</td></tr>
+      <tr><td>퍼즐 기록</td><td>게임 종류, 퍼즐 날짜(또는 영토와 스테이지 번호), 점수, 걸린 시간, 사용한 힌트 수, 실수 수, 기록한 시각. 점수와 시간은 순위표에서 다른 사용자에게 보입니다.</td></tr>
       <tr><td>접속 기록</td><td>서버에 연결할 때 서비스 제공자(Supabase)가 보안과 운영을 위해 IP 주소, 요청 시각 같은 접속 기록을 자동으로 남길 수 있습니다.</td></tr>
     </table>
     </div>
     <ul>
-      <li><strong>목적</strong>: 오늘의 퍼즐 순위와 이번 주 순위 표시, 비정상적인 점수 걸러 내기.</li>
+      <li><strong>목적</strong>: 오늘의 퍼즐 순위, 이번 주 순위, 스테이지 순위와 영토 합계 순위 표시, 비정상적인 점수 걸러 내기.</li>
       <li><strong>보관 곳</strong>: Supabase Inc.(미국 회사)가 운영하는 데이터베이스 서비스이며, 데이터는 <strong>대한민국 서울 리전</strong>에 저장됩니다. 개발자는 이 서비스에 순위표 데이터의 저장과 관리를 맡기고 있습니다(처리 위탁). Supabase의 정보 처리는 <a href="https://supabase.com/privacy">Supabase 개인정보처리방침</a>을 따릅니다.</li>
       <li><strong>보관 기간</strong>: 순위표 서비스를 운영하는 동안 보관하며, 삭제를 요청하면 지체 없이 지웁니다. 순위표 서비스를 끝내면 모두 삭제합니다.</li>
       <li><strong>전송 보호</strong>: 모든 통신은 HTTPS로 암호화됩니다. 앱은 정해진 서버 함수로만 기록을 올리고 순위를 읽으며, 다른 사람의 기록을 직접 읽거나 바꿀 수 없습니다.</li>
@@ -96,7 +96,7 @@
     <h2>5. 권한</h2>
     <p>Android에서 아래 권한을 사용합니다.</p>
     <ul>
-      <li><strong>인터넷</strong>: 오늘의 퍼즐 순위표 전송과 조회, 앱 안 구매 확인.</li>
+      <li><strong>인터넷</strong>: 순위표 전송과 조회, 앱 안 구매 확인.</li>
       <li><strong>진동</strong>: 정답/오답 알림(설정에서 끌 수 있음).</li>
       <li>결제 기능이 들어간 버전에는 Google Play 결제에 필요한 권한이 추가됩니다.</li>
     </ul>
@@ -125,7 +125,7 @@
       <ul>
         <li>Gridoo does <strong>not ask for</strong> personal information such as your name, email, phone number or location.</li>
         <li>Your progress and settings are stored <strong>on your device</strong>.</li>
-        <li>For the <strong>Daily Puzzle leaderboard</strong>, when you finish a daily puzzle your nickname, score, time and a few related values are sent to the leaderboard server. Your nickname and score are visible to other players.</li>
+        <li>For the <strong>leaderboards</strong>, when you finish a daily puzzle or a story stage your nickname, score, time and a few related values are sent to the leaderboard server. Your nickname and score are visible to other players.</li>
         <li>There are no ads, no analytics and no tracking.</li>
         <li>In-app purchases are processed by Google Play (or the App Store); the developer never sees your payment details.</li>
       </ul>
@@ -147,19 +147,19 @@
     </div>
     <p>This data is deleted when you uninstall the app or clear its data in your device settings.</p>
 
-    <h2>3. Daily Puzzle leaderboard</h2>
-    <p>When you <strong>finish a daily puzzle on its day</strong>, the following is sent to the leaderboard server so rankings can be shown. Free play, story stages and replays of past dates are not sent.</p>
+    <h2>3. Leaderboards</h2>
+    <p>When you <strong>finish a daily puzzle on its day</strong> or <strong>clear a stage on the story map</strong>, the following is sent to the leaderboard server so rankings can be shown. Free play and replays of past daily puzzles are not sent.</p>
     <div class="wrap">
     <table>
       <tr><th>Item</th><th>Details</th></tr>
       <tr><td>Anonymous account ID</td><td>A random value created the first time the app connects to the leaderboard. It is not linked to your name, email or a hardware identifier.</td></tr>
       <tr><td>Nickname</td><td>The nickname you set on the records screen (2–12 characters). <strong>It is shown to other players on the leaderboard.</strong> Please do not use your real name or contact details.</td></tr>
-      <tr><td>Puzzle result</td><td>Game, puzzle date, score, time taken, hints used, mistakes, and time of submission. Score and time are shown to other players.</td></tr>
+      <tr><td>Puzzle result</td><td>Game, puzzle date (or territory and stage number), score, time taken, hints used, mistakes, and time of submission. Score and time are shown to other players.</td></tr>
       <tr><td>Connection logs</td><td>When the app connects, the service provider (Supabase) may automatically keep connection logs such as IP address and request time for security and operations.</td></tr>
     </table>
     </div>
     <ul>
-      <li><strong>Purpose</strong>: showing daily and weekly rankings and filtering out impossible scores.</li>
+      <li><strong>Purpose</strong>: showing daily, weekly, stage and territory rankings and filtering out impossible scores.</li>
       <li><strong>Where it is stored</strong>: a database service operated by Supabase Inc. (a US company); the data is stored in the <strong>Seoul, South Korea</strong> region. The developer has entrusted storage and management of leaderboard data to this service. Supabase's handling of information is governed by the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
       <li><strong>Retention</strong>: kept while the leaderboard is operated, and deleted without delay on request. All of it is deleted if the leaderboard is shut down.</li>
       <li><strong>Protection in transit</strong>: all communication is encrypted with HTTPS. The app can only submit results and read rankings through fixed server functions; it cannot read or change other players' records directly.</li>
@@ -173,7 +173,7 @@
     <h2>5. Permissions</h2>
     <p>On Android the app uses the following permissions:</p>
     <ul>
-      <li><strong>Internet</strong>: sending and viewing the Daily Puzzle leaderboard, and confirming in-app purchases.</li>
+      <li><strong>Internet</strong>: sending and viewing the leaderboards, and confirming in-app purchases.</li>
       <li><strong>Vibration</strong>: right/wrong feedback (can be turned off in settings).</li>
       <li>Versions with purchases enabled also include the permission required by Google Play Billing.</li>
     </ul>
