@@ -8,6 +8,7 @@
   Gridoo 개인정보처리방침. Google Play 등록정보의 "개인정보처리방침 URL" 로 쓰는 공개 페이지.
   앱이 하는 일을 바꾸면(서버 순위표, 분석 도구, 광고, 새 권한 등) 이 페이지도 함께 고치고 시행일을 바꾼다.
   2026-11-20: 오늘의 퍼즐 온라인 순위표(Supabase, 서울 리전) 추가.
+  2026-11-23: 선택 기능 "구글 계정 연결"(기기를 바꿔도 이어 하기) 추가 — 구글 계정 식별값·이메일과 게임 진행을 서버에 저장.
 -->
 <style>
   :root {
@@ -41,13 +42,14 @@
 
   <section id="ko">
     <h1>Gridoo 개인정보처리방침</h1>
-    <p class="meta">시행일: 2026년 11월 20일 (이전 버전: 2026년 11월 8일)</p>
+    <p class="meta">시행일: 2026년 11월 23일 (이전 버전: 2026년 11월 20일, 2026년 11월 8일)</p>
 
     <div class="summary">
       <strong>한눈에 보기</strong>
       <ul>
-        <li>Gridoo는 이름, 이메일, 전화번호, 위치 같은 개인정보를 <strong>받지 않습니다</strong>.</li>
+        <li>Gridoo는 이름, 전화번호, 위치 같은 개인정보를 <strong>받지 않습니다</strong>. 회원가입 없이 바로 쓸 수 있습니다.</li>
         <li>게임 진행과 설정은 <strong>내 기기 안에</strong> 저장됩니다.</li>
+        <li><strong>구글 계정 연결은 선택</strong>입니다. 기록 화면에서 직접 연결한 경우에만, 기기를 바꿔도 이어 할 수 있도록 구글 계정 식별값·이메일 주소와 게임 진행이 서버에 저장됩니다. 이 정보는 다른 사용자에게 보이지 않습니다.</li>
         <li><strong>순위표</strong>를 위해, 오늘의 퍼즐이나 스토리 스테이지를 다 풀면 닉네임과 점수, 걸린 시간 등이 순위표 서버로 전송됩니다. 닉네임과 점수는 다른 사용자에게 보입니다.</li>
         <li>광고, 분석 도구, 추적 기능이 없습니다.</li>
         <li>앱 안 구매는 Google Play(또는 App Store)가 처리하며, 개발자는 결제 정보를 볼 수 없습니다.</li>
@@ -55,7 +57,7 @@
     </div>
 
     <h2>1. 처리하는 정보</h2>
-    <p>Gridoo는 개인을 직접 알아볼 수 있는 정보(이름, 이메일, 전화번호, 위치, 연락처, 사진 등)를 받지 않습니다. 회원가입이나 로그인 절차도 없습니다. 아래 2장(기기 안)과 3장(순위표 서버)의 정보만 다룹니다.</p>
+    <p>Gridoo는 회원가입 없이 쓸 수 있으며, 전화번호, 위치, 연락처, 사진 같은 정보를 받지 않습니다. 아래 2장(기기 안), 3장(순위표 서버), 4장(구글 계정을 연결한 경우에만)의 정보만 다룹니다. 구글 계정을 연결하지 않으면 이메일처럼 개인을 알아볼 수 있는 정보는 받지 않습니다.</p>
 
     <h2>2. 기기에만 저장되는 정보</h2>
     <p>게임을 이어 하기 위해 아래 정보가 <strong>사용자의 기기 안</strong>(앱 전용 저장 공간)에 저장됩니다.</p>
@@ -66,16 +68,17 @@
       <tr><td>기록과 업적</td><td>푼 횟수, 최고 기록, 점수, 업적·도전 진행과 받은 보상</td></tr>
       <tr><td>닉네임과 무작위 ID</td><td>기록 화면에 보이는 닉네임(직접 정함)과, 기기에서 만든 무작위 식별값. 실명이나 기기 고유번호가 아닙니다.</td></tr>
       <tr><td>설정</td><td>소리, 진동, 고른 스킨과 효과, 가진 꾸미기 아이템과 힌트 수</td></tr>
+      <tr><td>연결한 구글 이메일</td><td>구글 계정을 연결한 경우, 기록 화면에 어느 계정에 저장 중인지 보여 주기 위한 이메일 주소</td></tr>
     </table>
     </div>
-    <p>이 정보는 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 함께 삭제됩니다.</p>
+    <p>이 정보는 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 함께 삭제됩니다. 구글 계정을 연결했다면 서버에 저장된 진행은 남아 있어, 다시 설치한 뒤 같은 계정을 연결하면 이어 할 수 있습니다(4장).</p>
 
     <h2>3. 순위표</h2>
     <p>오늘의 퍼즐을 <strong>그날 다 풀거나</strong>, 스토리 지도의 <strong>스테이지를 깨면</strong> 순위를 보여 주기 위해 아래 정보가 순위표 서버로 전송됩니다. 자유 플레이와 지난 날짜의 오늘의 퍼즐을 다시 푼 기록은 전송하지 않습니다.</p>
     <div class="wrap">
     <table>
       <tr><th>항목</th><th>내용</th></tr>
-      <tr><td>익명 계정 ID</td><td>앱이 처음 순위표에 연결할 때 만들어지는 무작위 값. 이름, 이메일, 기기 고유번호와 연결되지 않습니다.</td></tr>
+      <tr><td>익명 계정 ID</td><td>앱이 처음 순위표에 연결할 때 만들어지는 무작위 값. 기기 고유번호와 연결되지 않으며, 구글 계정을 연결하지 않으면 이름이나 이메일과도 연결되지 않습니다.</td></tr>
       <tr><td>닉네임</td><td>기록 화면에서 직접 정한 닉네임(2~12자). <strong>순위표에서 다른 사용자에게 보입니다.</strong> 실명이나 연락처를 닉네임으로 쓰지 마세요.</td></tr>
       <tr><td>퍼즐 기록</td><td>게임 종류, 퍼즐 날짜(또는 영토와 스테이지 번호), 점수, 걸린 시간, 사용한 힌트 수, 실수 수, 기록한 시각. 점수와 시간은 순위표에서 다른 사용자에게 보입니다.</td></tr>
       <tr><td>접속 기록</td><td>서버에 연결할 때 서비스 제공자(Supabase)가 보안과 운영을 위해 IP 주소, 요청 시각 같은 접속 기록을 자동으로 남길 수 있습니다.</td></tr>
@@ -86,31 +89,56 @@
       <li><strong>보관 곳</strong>: Supabase Inc.(미국 회사)가 운영하는 데이터베이스 서비스이며, 데이터는 <strong>대한민국 서울 리전</strong>에 저장됩니다. 개발자는 이 서비스에 순위표 데이터의 저장과 관리를 맡기고 있습니다(처리 위탁). Supabase의 정보 처리는 <a href="https://supabase.com/privacy">Supabase 개인정보처리방침</a>을 따릅니다.</li>
       <li><strong>보관 기간</strong>: 순위표 서비스를 운영하는 동안 보관하며, 삭제를 요청하면 지체 없이 지웁니다. 순위표 서비스를 끝내면 모두 삭제합니다.</li>
       <li><strong>전송 보호</strong>: 모든 통신은 HTTPS로 암호화됩니다. 앱은 정해진 서버 함수로만 기록을 올리고 순위를 읽으며, 다른 사람의 기록을 직접 읽거나 바꿀 수 없습니다.</li>
-      <li><strong>삭제 요청</strong>: 아래 문의 메일로 닉네임(과 기억나면 기록한 날짜)을 보내 주시면 그 계정의 닉네임과 모든 기록을 삭제합니다. 앱을 삭제하면 기기에 있던 익명 계정 연결이 사라져 그 계정은 다시 쓰이지 않습니다.</li>
+      <li><strong>삭제 요청</strong>: 아래 <a href="#delete">8. 계정과 데이터 삭제</a>를 보세요. 구글 계정을 연결하지 않았다면, 앱을 삭제하는 순간 기기에 있던 익명 계정 연결이 사라져 그 계정은 다시 쓰이지 않습니다.</li>
       <li>인터넷에 연결되어 있지 않으면 기록을 기기에 잠시 보관했다가 다음에 연결될 때 보냅니다.</li>
     </ul>
 
-    <h2>4. 앱 안 구매</h2>
+    <h2>4. 구글 계정 연결 (선택, 기기를 바꿔도 이어 하기)</h2>
+    <p>기록 화면의 <strong>"구글 계정 연결"</strong>을 직접 누른 경우에만 아래 정보를 처리합니다. 연결하지 않아도 게임의 모든 기능을 쓸 수 있습니다. 로그인은 Google이 제공하는 화면에서 이루어지며, 앱은 구글 비밀번호를 받지 않습니다.</p>
+    <div class="wrap">
+    <table>
+      <tr><th>항목</th><th>내용</th></tr>
+      <tr><td>구글 계정 정보</td><td>Google이 주는 계정 고유 식별값과 이메일 주소. 구글 계정에 설정된 이름과 프로필 사진 주소가 함께 전달되어 저장될 수 있습니다. <strong>다른 사용자에게 보이지 않습니다.</strong></td></tr>
+      <tr><td>게임 진행</td><td>스테이지 별, 본 가이드, 오늘의 퍼즐 달력 기록, 푼 횟수와 최고 기록, 업적·도전 진행과 받은 보상, 힌트 수, 업적 보상으로 받은 꾸미기 효과, 네모 로직에서 푼 그림, 닉네임과 기록 화면의 무작위 ID, 기기마다 만든 무작위 값(여러 기기의 진행을 합칠 때 씀). 풀던 퍼즐과 소리·진동 같은 설정은 올리지 않습니다.</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><strong>목적</strong>: 같은 구글 계정을 연결한 다른 기기에서 진행을 이어 할 수 있게 하고, 순위표 계정도 그 기기에서 이어 쓰게 하는 것.</li>
+      <li><strong>보내는 때</strong>: 연결할 때, 그 뒤로 앱을 켤 때와 판을 끝내거나 보상을 받을 때 진행을 맞춥니다.</li>
+      <li><strong>보관 곳과 보호</strong>: 3장과 같은 Supabase(서울 리전)에 저장되며, HTTPS로 암호화해 주고받습니다. 앱은 자기 계정의 진행만 읽고 쓸 수 있습니다.</li>
+      <li><strong>보관 기간</strong>: 삭제를 요청할 때까지 보관합니다. 서비스를 끝내면 모두 삭제합니다.</li>
+      <li>산 꾸미기 아이템은 이 진행에 넣지 않으며, Google Play의 구매 복원으로 같은 구글 계정의 기기에 돌아옵니다(5장).</li>
+      <li>Google의 로그인 정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다. 내 Google 계정 → 보안 → 서드 파티 앱 및 서비스에서 Gridoo의 연결을 언제든 끊을 수 있습니다.</li>
+    </ul>
+
+    <h2>5. 앱 안 구매</h2>
     <p>꾸미기 효과, 스킨, 힌트 같은 앱 안 구매는 Google Play 결제 시스템(iOS에서는 Apple App Store)을 통해 이루어집니다. 카드 번호 등 결제 정보는 Google 또는 Apple이 처리하며 개발자에게 전달되지 않습니다. 앱은 구매가 완료되었는지와 구매한 상품만 확인합니다. Google의 정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
 
-    <h2>5. 권한</h2>
+    <h2>6. 권한</h2>
     <p>Android에서 아래 권한을 사용합니다.</p>
     <ul>
-      <li><strong>인터넷</strong>: 순위표 전송과 조회, 앱 안 구매 확인.</li>
+      <li><strong>인터넷</strong>: 순위표 전송과 조회, 앱 안 구매 확인, 구글 계정을 연결한 경우 진행 저장.</li>
       <li><strong>진동</strong>: 정답/오답 알림(설정에서 끌 수 있음).</li>
       <li>결제 기능이 들어간 버전에는 Google Play 결제에 필요한 권한이 추가됩니다.</li>
     </ul>
 
-    <h2>6. 제3자 제공</h2>
-    <p>개발자는 정보를 판매하거나 광고·마케팅 목적으로 제3자에게 제공하지 않습니다. 순위표 데이터의 저장을 맡은 Supabase(3장)와 결제를 처리하는 Google·Apple(4장) 외에 정보를 받는 곳은 없습니다. 법령에 따라 요구되는 경우는 예외입니다.</p>
+    <h2>7. 제3자 제공</h2>
+    <p>개발자는 정보를 판매하거나 광고·마케팅 목적으로 제3자에게 제공하지 않습니다. 순위표와 진행 저장을 맡은 Supabase(3·4장), 구글 로그인을 제공하는 Google(4장), 결제를 처리하는 Google·Apple(5장) 외에 정보를 받는 곳은 없습니다. 법령에 따라 요구되는 경우는 예외입니다.</p>
 
-    <h2>7. 아동</h2>
+    <h2 id="delete">8. 계정과 데이터 삭제</h2>
+    <ul>
+      <li><strong>기기의 정보</strong>: 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 바로 삭제됩니다.</li>
+      <li><strong>서버의 정보</strong>(순위표 기록, 구글 계정을 연결했다면 구글 계정 정보와 저장된 진행): 아래 문의 메일로 삭제를 요청해 주세요. 구글 계정을 연결했다면 <strong>연결한 구글 이메일 주소</strong>를, 연결하지 않았다면 <strong>닉네임</strong>(과 기억나면 기록한 날짜)을 적어 보내 주시면, 확인 뒤 지체 없이 계정과 모든 기록을 삭제하고 답장으로 알려 드립니다.</li>
+      <li>삭제한 정보는 되살릴 수 없습니다. 접속 기록처럼 서비스 제공자가 보안을 위해 남기는 기록은 그 제공자의 보관 기간이 지나면 지워집니다.</li>
+    </ul>
+
+    <h2>9. 아동</h2>
     <p>Gridoo는 누구나 즐길 수 있는 퍼즐 게임입니다. 순위표에는 닉네임이 공개되므로, 어린이는 실명이나 학교 이름 같은 정보를 닉네임으로 쓰지 않도록 보호자가 도와주세요. 그런 닉네임이 보이면 문의 메일로 알려 주시면 지웁니다.</p>
 
-    <h2>8. 방침의 변경</h2>
+    <h2>10. 방침의 변경</h2>
     <p>처리하는 정보가 바뀌면 이 페이지를 먼저 고치고 시행일을 새로 적습니다.</p>
 
-    <h2>9. 문의</h2>
+    <h2>11. 문의</h2>
     <p>개인정보에 관한 문의와 삭제 요청: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
   </section>
 
@@ -118,13 +146,14 @@
 
   <section id="en" lang="en">
     <h1>Gridoo Privacy Policy</h1>
-    <p class="meta">Effective date: November 20, 2026 (previous version: November 8, 2026)</p>
+    <p class="meta">Effective date: November 23, 2026 (previous versions: November 20, 2026 and November 8, 2026)</p>
 
     <div class="summary">
       <strong>At a glance</strong>
       <ul>
-        <li>Gridoo does <strong>not ask for</strong> personal information such as your name, email, phone number or location.</li>
+        <li>Gridoo does <strong>not ask for</strong> personal information such as your name, phone number or location, and works without sign-up.</li>
         <li>Your progress and settings are stored <strong>on your device</strong>.</li>
+        <li><strong>Connecting a Google account is optional.</strong> Only if you connect one yourself on the records screen, your Google account identifier, email address and game progress are stored on the server so you can continue on another device. This is not visible to other players.</li>
         <li>For the <strong>leaderboards</strong>, when you finish a daily puzzle or a story stage your nickname, score, time and a few related values are sent to the leaderboard server. Your nickname and score are visible to other players.</li>
         <li>There are no ads, no analytics and no tracking.</li>
         <li>In-app purchases are processed by Google Play (or the App Store); the developer never sees your payment details.</li>
@@ -132,7 +161,7 @@
     </div>
 
     <h2>1. Information we handle</h2>
-    <p>Gridoo does not ask for information that directly identifies you (name, email, phone number, location, contacts, photos, etc.). There is no sign-up or login. Only the information described in Section 2 (on your device) and Section 3 (leaderboard server) is handled.</p>
+    <p>Gridoo works without sign-up and does not ask for your phone number, location, contacts or photos. Only the information described in Section 2 (on your device), Section 3 (leaderboard server) and Section 4 (only if you connect a Google account) is handled. If you do not connect a Google account, no information that identifies you, such as an email address, is collected.</p>
 
     <h2>2. Information stored on your device</h2>
     <p>To let you continue playing, the following is stored <strong>on your device</strong>, in the app's private storage:</p>
@@ -143,16 +172,17 @@
       <tr><td>Records and achievements</td><td>Puzzles solved, best times, scores, achievement and challenge progress, rewards claimed</td></tr>
       <tr><td>Nickname and random ID</td><td>A nickname you choose for the records screen, and a random identifier generated on the device. It is not your real name or a hardware identifier.</td></tr>
       <tr><td>Settings</td><td>Sound, vibration, chosen skin and effect, owned cosmetic items and hint count</td></tr>
+      <tr><td>Connected Google email</td><td>If you connect a Google account, its email address, shown on the records screen so you know which account your progress is saved to</td></tr>
     </table>
     </div>
-    <p>This data is deleted when you uninstall the app or clear its data in your device settings.</p>
+    <p>This data is deleted when you uninstall the app or clear its data in your device settings. If you connected a Google account, the progress saved on the server remains, so you can continue after reinstalling by connecting the same account (Section 4).</p>
 
     <h2>3. Leaderboards</h2>
     <p>When you <strong>finish a daily puzzle on its day</strong> or <strong>clear a stage on the story map</strong>, the following is sent to the leaderboard server so rankings can be shown. Free play and replays of past daily puzzles are not sent.</p>
     <div class="wrap">
     <table>
       <tr><th>Item</th><th>Details</th></tr>
-      <tr><td>Anonymous account ID</td><td>A random value created the first time the app connects to the leaderboard. It is not linked to your name, email or a hardware identifier.</td></tr>
+      <tr><td>Anonymous account ID</td><td>A random value created the first time the app connects to the leaderboard. It is not linked to a hardware identifier, and unless you connect a Google account it is not linked to your name or email either.</td></tr>
       <tr><td>Nickname</td><td>The nickname you set on the records screen (2–12 characters). <strong>It is shown to other players on the leaderboard.</strong> Please do not use your real name or contact details.</td></tr>
       <tr><td>Puzzle result</td><td>Game, puzzle date (or territory and stage number), score, time taken, hints used, mistakes, and time of submission. Score and time are shown to other players.</td></tr>
       <tr><td>Connection logs</td><td>When the app connects, the service provider (Supabase) may automatically keep connection logs such as IP address and request time for security and operations.</td></tr>
@@ -163,31 +193,56 @@
       <li><strong>Where it is stored</strong>: a database service operated by Supabase Inc. (a US company); the data is stored in the <strong>Seoul, South Korea</strong> region. The developer has entrusted storage and management of leaderboard data to this service. Supabase's handling of information is governed by the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
       <li><strong>Retention</strong>: kept while the leaderboard is operated, and deleted without delay on request. All of it is deleted if the leaderboard is shut down.</li>
       <li><strong>Protection in transit</strong>: all communication is encrypted with HTTPS. The app can only submit results and read rankings through fixed server functions; it cannot read or change other players' records directly.</li>
-      <li><strong>Deletion requests</strong>: email your nickname (and, if you remember, the dates you played) to the address below and we will delete that account's nickname and all its records. Uninstalling the app removes the link to the anonymous account on your device, and that account is not used again.</li>
+      <li><strong>Deletion requests</strong>: see <a href="#delete-en">8. Deleting your account and data</a> below. If you have not connected a Google account, uninstalling the app removes the link to the anonymous account on your device, and that account is not used again.</li>
       <li>If you are offline, the result is kept on your device and sent the next time you connect.</li>
     </ul>
 
-    <h2>4. In-app purchases</h2>
+    <h2>4. Connecting a Google account (optional, continue on another device)</h2>
+    <p>The following is handled only if you press <strong>"Connect Google account"</strong> on the records screen yourself. Every feature of the game works without it. Sign-in happens on a screen provided by Google; the app never receives your Google password.</p>
+    <div class="wrap">
+    <table>
+      <tr><th>Item</th><th>Details</th></tr>
+      <tr><td>Google account information</td><td>The unique account identifier and email address provided by Google. The name and profile picture URL set on your Google account may also be passed along and stored. <strong>It is not shown to other players.</strong></td></tr>
+      <tr><td>Game progress</td><td>Stage stars, guides seen, daily puzzle calendar, puzzles solved and best times, achievement and challenge progress and rewards claimed, hint count, cosmetic effects received as achievement rewards, Nonogram pictures solved, your nickname and the records-screen random ID, and a random value per device (used to combine progress from several devices). Puzzles in progress and settings such as sound and vibration are not uploaded.</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><strong>Purpose</strong>: letting you continue on another device connected to the same Google account, and keep using the same leaderboard account there.</li>
+      <li><strong>When it is sent</strong>: when you connect, and afterwards when you open the app, finish a puzzle or claim a reward.</li>
+      <li><strong>Where and how</strong>: stored in the same Supabase service as Section 3 (Seoul region) and sent encrypted over HTTPS. The app can only read and write the progress of its own account.</li>
+      <li><strong>Retention</strong>: kept until you ask us to delete it. All of it is deleted if the service is shut down.</li>
+      <li>Purchased cosmetic items are not part of this progress; Google Play's purchase restore returns them to devices signed in to the same Google account (Section 5).</li>
+      <li>Google's handling of sign-in information is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can remove Gridoo's access at any time in your Google Account (Security → Third-party apps &amp; services).</li>
+    </ul>
+
+    <h2>5. In-app purchases</h2>
     <p>In-app purchases (cosmetic effects, skins, hints) are made through Google Play Billing (Apple App Store on iOS). Payment details such as card numbers are handled by Google or Apple and are not shared with the developer. The app only checks whether a purchase was completed and which item was bought. Google's handling of your information is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-    <h2>5. Permissions</h2>
+    <h2>6. Permissions</h2>
     <p>On Android the app uses the following permissions:</p>
     <ul>
-      <li><strong>Internet</strong>: sending and viewing the leaderboards, and confirming in-app purchases.</li>
+      <li><strong>Internet</strong>: sending and viewing the leaderboards, confirming in-app purchases, and saving progress if you connect a Google account.</li>
       <li><strong>Vibration</strong>: right/wrong feedback (can be turned off in settings).</li>
       <li>Versions with purchases enabled also include the permission required by Google Play Billing.</li>
     </ul>
 
-    <h2>6. Sharing with third parties</h2>
-    <p>The developer does not sell information or share it with third parties for advertising or marketing. Apart from Supabase, which stores leaderboard data (Section 3), and Google/Apple, which process payments (Section 4), no one receives your information, except where required by law.</p>
+    <h2>7. Sharing with third parties</h2>
+    <p>The developer does not sell information or share it with third parties for advertising or marketing. Apart from Supabase, which stores leaderboard data and saved progress (Sections 3 and 4), Google, which provides Google sign-in (Section 4), and Google/Apple, which process payments (Section 5), no one receives your information, except where required by law.</p>
 
-    <h2>7. Children</h2>
+    <h2 id="delete-en">8. Deleting your account and data</h2>
+    <ul>
+      <li><strong>On your device</strong>: deleted immediately when you uninstall the app or clear its data in your device settings.</li>
+      <li><strong>On the server</strong> (leaderboard records and, if you connected a Google account, your Google account information and saved progress): email the address below. If you connected a Google account, include <strong>the connected Google email address</strong>; otherwise include your <strong>nickname</strong> (and, if you remember, the dates you played). After checking, we will delete the account and all its records without delay and reply to confirm.</li>
+      <li>Deleted information cannot be restored. Logs that a service provider keeps for security, such as connection logs, are removed after that provider's retention period.</li>
+    </ul>
+
+    <h2>9. Children</h2>
     <p>Gridoo is a puzzle game for everyone. Because nicknames are public on the leaderboard, parents should help children avoid using their real name, school name or similar details as a nickname. If you see such a nickname, let us know by email and we will remove it.</p>
 
-    <h2>8. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>If the information handled changes, this page will be updated first with a new effective date.</p>
 
-    <h2>9. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Privacy questions and deletion requests: <a href="mailto:gridoo.support@gmail.com">gridoo.support@gmail.com</a></p>
   </section>
 </main>
