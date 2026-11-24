@@ -9,6 +9,7 @@
   앱이 하는 일을 바꾸면(서버 순위표, 분석 도구, 광고, 새 권한 등) 이 페이지도 함께 고치고 시행일을 바꾼다.
   2026-11-20: 오늘의 퍼즐 온라인 순위표(Supabase, 서울 리전) 추가.
   2026-11-23: 선택 기능 "구글 계정 연결"(기기를 바꿔도 이어 하기) 추가 — 구글 계정 식별값·이메일과 게임 진행을 서버에 저장.
+  2026-11-24: 앱 안 계정 삭제·연결 해제, 이미 연결한 계정으로 들어갈 때 순위표 기록 옮기기 추가.
 -->
 <style>
   :root {
@@ -42,7 +43,7 @@
 
   <section id="ko">
     <h1>Gridoo 개인정보처리방침</h1>
-    <p class="meta">시행일: 2026년 11월 23일 (이전 버전: 2026년 11월 20일, 2026년 11월 8일)</p>
+    <p class="meta">시행일: 2026년 11월 24일 (이전 버전: 2026년 11월 23일, 2026년 11월 20일, 2026년 11월 8일)</p>
 
     <div class="summary">
       <strong>한눈에 보기</strong>
@@ -106,7 +107,9 @@
       <li><strong>목적</strong>: 같은 구글 계정을 연결한 다른 기기에서 진행을 이어 할 수 있게 하고, 순위표 계정도 그 기기에서 이어 쓰게 하는 것.</li>
       <li><strong>보내는 때</strong>: 연결할 때, 그 뒤로 앱을 켤 때와 판을 끝내거나 보상을 받을 때 진행을 맞춥니다.</li>
       <li><strong>보관 곳과 보호</strong>: 3장과 같은 Supabase(서울 리전)에 저장되며, HTTPS로 암호화해 주고받습니다. 앱은 자기 계정의 진행만 읽고 쓸 수 있습니다.</li>
-      <li><strong>보관 기간</strong>: 삭제를 요청할 때까지 보관합니다. 서비스를 끝내면 모두 삭제합니다.</li>
+      <li><strong>보관 기간</strong>: 앱에서 계정을 삭제하거나 삭제를 요청할 때까지 보관합니다. 서비스를 끝내면 모두 삭제합니다.</li>
+      <li>이미 다른 기기에서 연결한 구글 계정을 연결하면 그 계정으로 들어가며, 이 기기의 익명 계정에 있던 순위표 기록은 그 계정으로 옮겨지고(같은 날·같은 스테이지는 더 좋은 기록만) 익명 계정은 삭제됩니다.</li>
+      <li>계정 창의 <strong>"이 기기만 연결 해제"</strong>는 이 기기에서만 구글 계정 연결을 끊습니다. 서버의 진행과 순위표 기록은 남아 있어 같은 계정을 다시 연결하면 이어 할 수 있습니다. 서버에서 지우려면 8장의 계정 삭제를 쓰세요.</li>
       <li>산 꾸미기 아이템은 이 진행에 넣지 않으며, Google Play의 구매 복원으로 같은 구글 계정의 기기에 돌아옵니다(5장).</li>
       <li>Google의 로그인 정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다. 내 Google 계정 → 보안 → 서드 파티 앱 및 서비스에서 Gridoo의 연결을 언제든 끊을 수 있습니다.</li>
     </ul>
@@ -128,7 +131,8 @@
     <h2 id="delete">8. 계정과 데이터 삭제</h2>
     <ul>
       <li><strong>기기의 정보</strong>: 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 바로 삭제됩니다.</li>
-      <li><strong>서버의 정보</strong>(순위표 기록, 구글 계정을 연결했다면 구글 계정 정보와 저장된 진행): 아래 문의 메일로 삭제를 요청해 주세요. 구글 계정을 연결했다면 <strong>연결한 구글 이메일 주소</strong>를, 연결하지 않았다면 <strong>닉네임</strong>(과 기억나면 기록한 날짜)을 적어 보내 주시면, 확인 뒤 지체 없이 계정과 모든 기록을 삭제하고 답장으로 알려 드립니다.</li>
+      <li><strong>앱에서 바로 삭제</strong>(구글 계정을 연결한 경우): 첫 화면 오른쪽 위 계정 버튼(또는 기록 화면의 "계정 관리") → <strong>"계정 삭제"</strong>를 누르면 서버에 있는 순위표 기록, 저장된 진행, 구글 계정 정보와 계정이 바로 삭제됩니다. 기기 안의 진행은 그대로 남으며, Google Play에서 산 아이템은 구매 기록이 Google에 있으므로 지워지지 않습니다.</li>
+      <li><strong>메일로 삭제 요청</strong>(서버의 순위표 기록, 구글 계정을 연결했다면 구글 계정 정보와 저장된 진행): 아래 문의 메일로 삭제를 요청해 주세요. 구글 계정을 연결했다면 <strong>연결한 구글 이메일 주소</strong>를, 연결하지 않았다면 <strong>닉네임</strong>(과 기억나면 기록한 날짜)을 적어 보내 주시면, 확인 뒤 지체 없이 계정과 모든 기록을 삭제하고 답장으로 알려 드립니다.</li>
       <li>삭제한 정보는 되살릴 수 없습니다. 접속 기록처럼 서비스 제공자가 보안을 위해 남기는 기록은 그 제공자의 보관 기간이 지나면 지워집니다.</li>
     </ul>
 
@@ -146,7 +150,7 @@
 
   <section id="en" lang="en">
     <h1>Gridoo Privacy Policy</h1>
-    <p class="meta">Effective date: November 23, 2026 (previous versions: November 20, 2026 and November 8, 2026)</p>
+    <p class="meta">Effective date: November 24, 2026 (previous versions: November 23, 2026, November 20, 2026 and November 8, 2026)</p>
 
     <div class="summary">
       <strong>At a glance</strong>
@@ -210,7 +214,9 @@
       <li><strong>Purpose</strong>: letting you continue on another device connected to the same Google account, and keep using the same leaderboard account there.</li>
       <li><strong>When it is sent</strong>: when you connect, and afterwards when you open the app, finish a puzzle or claim a reward.</li>
       <li><strong>Where and how</strong>: stored in the same Supabase service as Section 3 (Seoul region) and sent encrypted over HTTPS. The app can only read and write the progress of its own account.</li>
-      <li><strong>Retention</strong>: kept until you ask us to delete it. All of it is deleted if the service is shut down.</li>
+      <li><strong>Retention</strong>: kept until you delete your account in the app or ask us to delete it. All of it is deleted if the service is shut down.</li>
+      <li>If you connect a Google account that is already connected on another device, you sign in to that account. The leaderboard records of this device's anonymous account are moved to it (for the same day or stage, only the better record is kept) and the anonymous account is deleted.</li>
+      <li><strong>"Disconnect this device"</strong> in the account window only removes the Google connection on this device. Your saved progress and leaderboard records stay on the server, so you can continue by connecting the same account again. To remove them from the server, use account deletion in Section 8.</li>
       <li>Purchased cosmetic items are not part of this progress; Google Play's purchase restore returns them to devices signed in to the same Google account (Section 5).</li>
       <li>Google's handling of sign-in information is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can remove Gridoo's access at any time in your Google Account (Security → Third-party apps &amp; services).</li>
     </ul>
@@ -232,7 +238,8 @@
     <h2 id="delete-en">8. Deleting your account and data</h2>
     <ul>
       <li><strong>On your device</strong>: deleted immediately when you uninstall the app or clear its data in your device settings.</li>
-      <li><strong>On the server</strong> (leaderboard records and, if you connected a Google account, your Google account information and saved progress): email the address below. If you connected a Google account, include <strong>the connected Google email address</strong>; otherwise include your <strong>nickname</strong> (and, if you remember, the dates you played). After checking, we will delete the account and all its records without delay and reply to confirm.</li>
+      <li><strong>Delete in the app</strong> (if you connected a Google account): tap the account button at the top right of the title screen (or "Manage account" on the records screen) → <strong>"Delete account"</strong>. Your leaderboard records, saved progress, Google account information and the account itself are deleted from the server right away. Progress on your device stays, and items bought on Google Play are not removed because their purchase records are kept by Google.</li>
+      <li><strong>Request by email</strong> (leaderboard records and, if you connected a Google account, your Google account information and saved progress): email the address below. If you connected a Google account, include <strong>the connected Google email address</strong>; otherwise include your <strong>nickname</strong> (and, if you remember, the dates you played). After checking, we will delete the account and all its records without delay and reply to confirm.</li>
       <li>Deleted information cannot be restored. Logs that a service provider keeps for security, such as connection logs, are removed after that provider's retention period.</li>
     </ul>
 
